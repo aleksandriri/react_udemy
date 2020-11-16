@@ -1,12 +1,13 @@
 import React from "react";
 import './App.css';
 import Car from "./car/car";
+import state from "./State/state";
 
-function App() {
+let App = (props) => {
     return (
         <div className="App" style={{textAlign: 'left'}}>
-            <Car name={'Audi'} year={2010}/>
-            <Car name={'BMW'} year={2007}/>
+            <Car name={state.cars[0].name} year={state.cars[0].year}/>
+            <Car name={state.cars[1].name} year={state.cars[1].year}/>
         </div>
     );
 }
