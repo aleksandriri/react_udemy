@@ -8,6 +8,7 @@ let App = (props) => {
         <div className="App" style={{textAlign: 'left'}}>
             <Car name={state.cars[0].name} year={state.cars[0].year}/>
             <Car name={state.cars[1].name} year={state.cars[1].year}/>
+            <Car name={state.cars[2].name} year={state.cars[2].year}/>
         </div>
     );
 }
