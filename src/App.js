@@ -9,9 +9,10 @@ let App = (props) => {
         <div className="App" style={{textAlign: 'left'}}>
             <h1>Lorem{state.pageTitle}</h1>
             {
-                state.cars.map((car) => {
+                state.cars.map((car, index) => {
                     return (
                         <Car
+                            key={index}
                             name={car.name}
                             year={car.year}
                             description={car.description}
